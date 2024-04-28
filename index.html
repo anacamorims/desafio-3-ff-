@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Contato</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+
+            <h1>Formulário de Contato</h1>
+
+        </header>
+
+        <main>
+
+            <form id="carForm">
+        
+                <fieldset class="container-form">
+    
+                    <section>
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </section>
+    
+                    <section>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </section>
+    
+                    <section>
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" id="assunto" a min="0" maxlength="50" >
+                    </section>
+
+                    <section>
+                        <label>Mensagem</label>
+                        <input type="text" name="mensagem" id="mensagem" autocomplete="off" min="0" maxlength="400" >
+                    </section>
+    
+                    <button id="submit">Enviar</button>
+
+        </main>
+
+        <footer></footer>
+
+    </body>
+
+</html>
