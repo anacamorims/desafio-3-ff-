@@ -68,7 +68,7 @@ function enviar() {
     localStorage.setItem('listaUser', JSON.stringify(listaUser));
 
     setTimeout(() => {
-      window.open("../index.html", "_self");
+      window.open("index.html", "_self");
     }, 3000);
   
   
