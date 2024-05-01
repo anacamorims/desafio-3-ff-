@@ -59,7 +59,8 @@ nome.addEventListener('input', () => {
  
 
 function enviar() {
-  if (validenome) {
+
+  if (validoEmail) {
     let usuario = new Usuario(nome.value, email.value, assunto.value, mensagem.value);
     listaUser.push(usuario);
   
