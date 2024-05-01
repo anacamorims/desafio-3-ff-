@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulário de Contato</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" >
     </head>
+
+
 
     <body>
         
@@ -16,37 +19,53 @@
 
         </header>
 
+
+
         <main>
 
-            <form id="carForm">
-        
-                <fieldset class="container-form">
-    
-                    <section>
-                        <label>Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                    </section>
-    
-                    <section>
-                        <label>Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email">
-                    </section>
-    
-                    <section>
-                        <label>Assunto</label>
-                        <input type="text" name="assunto" id="assunto" a min="0" maxlength="50" >
-                    </section>
+            <form method="post" onsubmit="return enviar()">
+            
+                <img src="assets/img.svg" width="500px" alt="Imagem animada, mulher com telefones e carta">
 
-                    <section>
-                        <label>Mensagem</label>
-                        <input type="text" name="mensagem" id="mensagem" autocomplete="off" min="0" maxlength="400" >
-                    </section>
-    
-                    <button id="submit">Enviar</button>
+                <fieldset class="container-form">
+
+                    <label for="nome" id="labelNome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" maxlength="60" autofocus>
+
+
+                    <label for="email" id="labelEmail" >Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Digite seu email">
+
+
+                    <label for="assunto" id="labelAssunto">Assunto</label>
+                    <input type="text" id="assunto"maxlength="30">
+
+
+                    <label id="labelMensagem">Mensagem</label>
+                    <textarea name="mensagem" id="text-mensagem" cols="30" rows="10"></textarea>
+
+
+                    <div id="mensagem"></div>
+
+
+                    <button type="submit">Enviar</button>
+
+
+                </fieldset>
+                
+            </form>
 
         </main>
 
-        <footer></footer>
+
+
+        <footer>
+            <p>Feito com &#10084;&#65039;&#65039; por <strong>Ana Carolina</strong></p>
+        </footer>
+
+
+        
+        <script src="js/script.js"></script>
 
     </body>
 
