@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,20 +8,37 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
 header{
-    background-color: rgb(218, 218, 136);
+    background-color: rgb(39, 161, 170);
     width: 100%;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
+h1{
+    margin: 5px;
+    color: #fff;
+}
+
+main {
+    flex-grow: 1;
+}
 
 form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .container-form{
@@ -29,39 +49,81 @@ form{
     width: 400px;
     box-shadow: 8px 8px 8px 8px rgba(50, 50, 50, 0.22);
     display: flex;
-    align-items: center;
+    gap: 10px;
     flex-direction: column;
     cursor: pointer;
 }
 
-button{
-    background-color: #E0C200;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
     width: 100%;
+    border: 1px solid rgb(194, 194, 194);
+    background: transparent;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(11, 192, 93);
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffffff;
+    color: #fff;
     font-size: 18px;
     font-family: "Roboto", sans-serif, 'Courier New';
     font-weight: 400;
     font-style: normal;
 }
 
-section{
-    margin-bottom: 15px;
+button:hover{
+    background-color: rgb(10, 143, 70);
 }
 
-
-input {
+#text-mensagem{
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 350px;
-    border: none;
-    border-bottom: 1px solid #515151;
+    width: 100%;
+    border: 1px solid rgb(194, 194, 194);
     background: transparent;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(39, 161, 170);
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px){
+    
+    h1{
+        font-size: 25px;
+    }
+    
+    form{
+        display: flex;
+        justify-content: center;
+    }
+    
+    img{
+        display: none;
+    }
+
+    input{
+        width: 250px;
+    }
+
+    .container-form{
+        font-size: 15px;
+    }
+    
+    footer{
+        font-size: 15px;
+    }
 }
