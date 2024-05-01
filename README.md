@@ -25,4 +25,11 @@ Neste projeto, foi proposto o desenvolvimento de um formulário de contato, onde
 
 ### ⚙️ Resultado 👀
 
-Acesse o site [aqui](https://anacamorims.github.io/desafio-2-frontend-fusion/)
+Acesse o site [aqui](https://anacamorims.github.io/desafio-3-frontend-fusion/)
+
+#
+
+![Captura de tela de 2024-04-30 22-59-46](https://github.com/anacamorims/desafio-3-frontend-fusion/assets/132526900/9898bf50-6c1c-4d6d-bb20-c1bc34353ad4)
+
+#
+![Captura de tela de 2024-04-30 23-00-29](https://github.com/anacamorims/desafio-3-frontend-fusion/assets/132526900/91c049d2-6d5b-4af0-9870-7e99ba8000d8)
