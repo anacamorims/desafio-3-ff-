@@ -22,6 +22,7 @@ let labelEmail = document.querySelector('#labelEmail');
 const emailInput = document.getElementById('email');
   
   
+
 emailInput.addEventListener('input', () => {
   
   const email = emailInput.value;
