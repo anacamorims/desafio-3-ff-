@@ -16,6 +16,8 @@ let labelNome = document.querySelector('#labelNome');
 let nome = document.querySelector('#nome');
 let validenome = false;
 let validoEmail = false;
+let assunto = document.getElementById('assunto');
+let mensagem = document.getElementById('text-mensagem');
 let labelEmail = document.querySelector('#labelEmail');
 const emailInput = document.getElementById('email');
   
@@ -56,20 +58,19 @@ nome.addEventListener('input', () => {
   
 });
   
- 
+
+
 
 function enviar() {
-
-  if (validoEmail) {
+  if ( validoEmail && validenome && assunto.value.trim() !== '' &&  mensagem.value.trim() !== '') {
+    
     let usuario = new Usuario(nome.value, email.value, assunto.value, mensagem.value);
     listaUser.push(usuario);
   
       
     localStorage.setItem('listaUser', JSON.stringify(listaUser));
-
-    setTimeout(() => {
-      window.open("index.html", "_self");
-    }, 3000);
+    
+    window.location.href = "index.html";
   
   
     document.getElementById('mensagem').innerHTML = '<span style="color:green;">Enviado com sucesso!</span>';
@@ -79,6 +80,7 @@ function enviar() {
       document.getElementById('mensagem').innerHTML = '<span style="color:red;">Preencha o formulário corretamente</span>';
       return false;
   }
+
   
 };
   
